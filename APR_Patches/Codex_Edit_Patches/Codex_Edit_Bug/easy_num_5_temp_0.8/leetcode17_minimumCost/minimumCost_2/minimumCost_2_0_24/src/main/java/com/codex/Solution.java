@@ -1,0 +1,23 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static int minimumCost(int[] cost) {
+        
+        int size = cost.length;
+        if(size == 0) return 0;
+        
+        Arrays.sort(cost);
+        int sum = 0;
+        for (int i = 0; i < cost.length; i++) {
+            if (i % 3 == 2) {
+                continue;
+            }
+            sum += cost[i];
+        }
+        return sum;
+    }
+
+    
+}

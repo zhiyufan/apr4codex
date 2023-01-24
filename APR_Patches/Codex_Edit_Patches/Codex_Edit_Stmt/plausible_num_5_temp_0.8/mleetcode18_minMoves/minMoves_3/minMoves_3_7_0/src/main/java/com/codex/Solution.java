@@ -1,0 +1,28 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static int minMoves(int target, int maxDoubles) {
+        
+        Map<Integer, Integer> memo = new HashMap<>();
+        return minMoves(target, maxDoubles, memo);
+    }
+
+    private static int minMoves(int target, int maxDoubles, Map<Integer, Integer> memo) {
+        if (target == 0) return 0;
+        if (maxDoubles == 0) return target;
+        if (memo.containsKey(target)) return memo.get(target);
+        int minMoves = Integer.MAX_VALUE;
+        for (int i = 1; i <= target; i++) {
+            minMoves = Math.min(minMoves, 1 + minMoves(target - i, maxDoubles - 1, memo));
+            if (target % 2 == 0) {
+                minMoves = Math.min(minMoves, 1 + minMoves(target / 2, maxDoubles - 1, memo));
+            }
+        }
+        memo.put(target, minMoves);
+        return minMoves;
+    }
+
+    
+}

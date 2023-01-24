@@ -1,0 +1,24 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static long minimalKSum(int[] nums, int k) {
+        Arrays.sort(nums);
+    
+        int i = 0;
+        long sum = 0;
+        
+        while (k > 0) {
+            if (i < nums.length && nums[i] <= i + 1) {
+                sum += nums[i++];
+            } else {
+                sum += i + 1;  
+                k--;
+            }
+        }
+        return sum;
+    }
+
+    
+}

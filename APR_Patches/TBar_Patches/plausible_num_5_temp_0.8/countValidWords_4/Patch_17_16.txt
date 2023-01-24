@@ -1,0 +1,12 @@
+//**********************************************************
+//com/codex/Solution.java ------ 34
+//**********************************************************
+===Buggy Code===
+if (token.charAt(i) != ',' && token.charAt(i) != '!') {
+                        return false;
+                    }
+
+===Patch Code===
+if (token.charAt(i) != ',' && token.charAt(i)>='!') {
+                        return false;
+                    }

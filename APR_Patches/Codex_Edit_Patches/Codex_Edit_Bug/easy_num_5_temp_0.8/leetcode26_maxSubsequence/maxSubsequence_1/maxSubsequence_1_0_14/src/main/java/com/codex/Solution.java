@@ -1,0 +1,12 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+public class MyClass {
+    public static void main(String args[]) {
+        System.out.println("Hellos");
+    }
+
+}
+}

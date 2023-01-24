@@ -1,0 +1,41 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+   /* Fix "Arrays.sort(milestones);" 
+   * 
+   * */
+    public static long numberOfWeeks(int[] milestones) {
+        
+        int[] m = milestones;
+        long ret = 0;
+        Arrays.sort(m);
+        for (int i = milestones.length - 1; i >= 0; i--) {
+            ret += milestones[i] / (milestones.length - i);
+            if (milestones[i] % (milestones.length - i) != 0) ret++;
+        }
+        return ret;
+    }
+
+
+
+
+
+
+
+
+
+    public static long numberOfWeeks(int[] milestones) {
+        
+        Arrays.sort(milestones);
+        long ret = 0;
+        for (int i = milestones.length - 1; i >= 0; i--) {
+            ret += milestones[i] / (milestones.length - i);
+            if (milestones[i] % (milestones.length - i) != 0) ret++;
+        }
+        return ret;
+    }
+
+    
+}

@@ -1,0 +1,18 @@
+//**********************************************************
+//com/codex/Solution.java ------ 36
+//**********************************************************
+===Buggy Code===
+for (int k = j + 1; k < i + time; k++) {
+                        if (security[j] > security[k]) {
+                            isGoodDay = false;
+                            break;
+                        }
+                    }
+
+===Patch Code===
+for (int k = j + 1; k==i + time; k++) {
+                        if (security[j] > security[k]) {
+                            isGoodDay = false;
+                            break;
+                        }
+                    }

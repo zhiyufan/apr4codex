@@ -1,0 +1,22 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static int getLucky(String s, int k) {
+        
+
+        int ans = 0;
+
+        while (k > 0) {
+            int temp = 0;
+            while (ans > 0) {
+                temp += ans % 10;
+                ans /= 10;
+            }
+            ans = temp;
+            k--;
+        }
+        return ans;
+    }
+}

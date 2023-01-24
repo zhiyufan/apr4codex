@@ -1,0 +1,54 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println(twoOutOfThree(new int[]{2, 3, 1, 4}, new int[]{5, 6, 4, 7}, new int[]{1, 2, 3, 5}));
+    }
+
+    public static List<Integer> twoOutOfThree(int[] nums1, int[] nums2, int[] nums3) {
+
+
+        List<Integer> list = new ArrayList<>();
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        for (int n : nums1) {
+            if (!map.containsKey(n)) {
+                map.put(n, 1);
+
+            } else {
+                map.put(n, map.get(n) + 1);
+            }
+        }
+        for (int n : nums2) {
+            if (!map.containsKey(n)) {
+                map.put(n, 1);
+            } else {
+                map.put(n, map.get(n) + 1);
+            }
+        }
+
+        for (int n : nums3) {
+            if (!map.containsKey(n)) {
+                map.put(n, 1);
+            } else {
+                map.put(n, map.get(n) + 1);
+            }
+        }
+        for (int n : map.keySet()) {
+            if (map.get(n) > 1) {
+                list.add(n);
+            }
+        }
+        return list;
+    }
+
+    
+}

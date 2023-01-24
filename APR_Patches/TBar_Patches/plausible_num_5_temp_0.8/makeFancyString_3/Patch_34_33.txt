@@ -1,0 +1,12 @@
+//**********************************************************
+//com/codex/Solution.java ------ 20
+//**********************************************************
+===Buggy Code===
+if (lastChar != thisChar && lastLastChar != thisChar) {
+                    sb.append(thisChar);
+                }
+
+===Patch Code===
+if (lastChar != lastLastChar || (lastChar != thisChar && lastLastChar != thisChar)) {
+                    sb.append(thisChar);
+                }

@@ -1,0 +1,22 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static boolean winnerOfGame(String colors) {
+        
+        char[] arr = colors.toCharArray();
+        int A = 1, B = 1;
+        for(char c : arr) {
+            if(c=='A')
+                A++;
+            else
+                B++;
+        }
+        if(A>B) {
+            return true;
+        }
+        return false;
+    }
+    
+}

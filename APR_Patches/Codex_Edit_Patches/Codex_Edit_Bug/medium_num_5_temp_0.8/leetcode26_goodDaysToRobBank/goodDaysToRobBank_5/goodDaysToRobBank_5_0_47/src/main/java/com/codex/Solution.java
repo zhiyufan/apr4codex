@@ -1,0 +1,45 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Theif {
+
+	public static List<Integer> goodDaysToRobBank(int[] security, int time) {
+
+		List<Integer> result = new ArrayList<>();
+		if (security == null || security.length == 0 || time <= 0)
+			return result;
+
+		if (time == 1) {
+			for (int i = 0; i < security.length - 1; i++) {
+				if (security[i] >= security[i + 1])
+					result.add(i);
+			}
+			return result;
+		}
+
+		int end = security.length - time;
+		for (int i = time; i <= end; i++) {
+			boolean flag  = false;
+			for (int j = 1; j <= time; j++) {
+				if (!(security[i - j] >= security[i - j + 1] && security[i + j] <= security[i + j - 1])) {
+					flag = true;
+					break;
+				}
+			}
+			if (!flag) result.add(i);
+		}
+		return result;
+	}
+
+	public static void main(String[] args) {
+		Theif theif = new Theif();
+		System.out.println(theif.goodDaysToRobBank(new int[] { 1, 2, 3, 6, 5, 3, 1 }, 2));
+    }
+
+}
+}

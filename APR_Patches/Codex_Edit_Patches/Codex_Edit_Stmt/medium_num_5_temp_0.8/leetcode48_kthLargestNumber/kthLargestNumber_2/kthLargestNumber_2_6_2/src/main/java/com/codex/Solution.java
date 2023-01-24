@@ -1,0 +1,28 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static String kthLargestNumber(String[] nums, int k) {
+        
+        PriorityQueue<String> pq = new PriorityQueue<>(k, (a, b) -> (b + a).compareTo(a + b));
+        for (String s : nums) {
+            if (pq.size() < k) {
+                pq.offer(s);
+            } else {
+                if (pq.peek().compareTo(s) < 0) {
+                    pq.poll();
+                    pq.offer(s);
+                }
+            }
+        }
+        List<String> res = new ArrayList<>();
+        while (!pq.isEmpty()) {
+            res.add(pq.poll());
+        }
+        Collections.reverse(res);
+        return String.join("", res);
+    }
+
+    
+}

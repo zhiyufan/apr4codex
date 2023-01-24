@@ -1,0 +1,23 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static int minimumOperations(int[] nums) {
+        
+        int[] dp = new int[nums.length];
+        dp[0] = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            if (i == 1) {
+                dp[i] = Math.max(nums[0], nums[1]);
+                continue;
+            }
+            int a = dp[i - 2] + Math.abs(nums[i] - nums[i - 2]);
+            int b = dp[i - 1] + Math.abs(nums[i] - nums[i - 1]);
+            dp[i] = Math.min(a, b);
+        }
+        return dp[nums.length - 1];
+    }
+
+    
+}

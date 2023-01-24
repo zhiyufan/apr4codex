@@ -1,0 +1,12 @@
+//**********************************************************
+//com/codex/Solution.java ------ 29
+//**********************************************************
+===Buggy Code===
+if (sb.length() == 0 || sb.charAt(sb.length() - 1) != s.charAt(s.length() - 1)) {
+            sb.append(s.charAt(s.length() - 1));
+        }
+
+===Patch Code===
+if (sb.length()!=0 || sb.charAt(sb.length() - 1) != s.charAt(s.length() - 1)) {
+            sb.append(s.charAt(s.length() - 1));
+        }

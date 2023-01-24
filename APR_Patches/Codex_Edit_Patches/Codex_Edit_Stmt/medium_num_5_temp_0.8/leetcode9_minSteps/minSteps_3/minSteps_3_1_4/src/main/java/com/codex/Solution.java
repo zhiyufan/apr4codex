@@ -1,0 +1,27 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+
+    public static int minSteps(String s, String t) {
+        
+        int[] letters = new int[26];
+        int res = 0;
+        for (char c : s.toCharArray()) {
+            letters[c - 'a']++;
+        }
+        for (char c : t.toCharArray()) {
+            letters[c - 'a']--;
+            if (letters[c - 'a'] < 0) {
+                res++;
+            }
+        }
+        for (int i : letters) {
+            if (i > 0) {
+                res += i;
+            }
+        }
+        return res;
+    }
+}

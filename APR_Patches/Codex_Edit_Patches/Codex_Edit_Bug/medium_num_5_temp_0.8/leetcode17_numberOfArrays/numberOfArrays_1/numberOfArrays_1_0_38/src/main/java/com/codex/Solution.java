@@ -1,0 +1,47 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static int numberOfArrays(int[] differences, int lower, int upper) {
+        int mod = (int)1e9 + 7;
+        int n = differences.length;
+        long[][] dp = new long[n + 1][2];
+        dp[n][0] = dp[n][1] = 1;
+        for (int i = n - 1; i >= 0; i--) {
+            for (int j = i; j < n; j++) {
+                 dp[i][0] = (dp[i][0] + dp[j + 1][0]) % mod;
+                if (dp[i][0] >= lower && dp[i][0] <= upper) {
+                    dp[i][1] = (dp[i][1] + dp[j + 1][1] + 1) % mod;
+                }
+                
+                if (dp[i][0] >= lower && dp[i][0] <= upper) {
+                    dp[i][1] = (dp[i][1] + dp[j + 1][1]) % mod;
+                }
+                if (dp[i][0] > upper) break;
+            }
+        }
+        return (int)dp[0][1];
+    }
+
+        public static int numberOfArrays_(int[] differences, int lower, int upper) {
+        
+        int mod = (int)1e9 + 7;
+        int n = differences.length;
+        long[] dp = new long[n + 1];
+        dp[n] = 1;
+        for (int i = n - 1; i >= 0; i--) {
+            long sum = 0;
+            for (int j = i; j < n; j++) {
+                sum += differences[j];
+                if (sum >= lower && sum <= upper) {
+                    dp[i] = (dp[i] + dp[j + 1]) % mod;
+                }
+                if (sum > upper) break;
+            }
+        }
+        return (int)dp[0];
+    }
+
+    
+}

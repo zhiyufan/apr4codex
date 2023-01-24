@@ -1,0 +1,31 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static int numberOfArrays(int[] differences, int lower, int upper) {
+        
+        int mod = 1000000007;
+        int n = differences.length;
+        long[] dp = new long[n + 1];
+        dp[n] = 1;
+        for (int i = n - 1; i >= 0; i--) {
+            int min = differences[i];
+            if (min < 0) min = Math.max(min, -upper);
+            else min = Math.min(min, lower);
+            
+            long sum = 0;
+            for (int j = i + 1; j < n; j++) {
+                min += differences[j];
+                sum = min;
+                if (sum >= lower && sum <= upper) {
+                    dp[i] = (dp[i] + dp[j + 1]) % mod;
+                }
+                if (sum > upper) break;
+            }
+        }
+        return (int)dp[0];
+    }
+
+    
+}

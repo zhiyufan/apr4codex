@@ -1,0 +1,16 @@
+//**********************************************************
+//com/codex/Solution.java ------ 40
+//**********************************************************
+===Buggy Code===
+if (strA.charAt(i) > strB.charAt(i)) {
+                    return -1;
+                } else {
+                    i++;
+                }
+
+===Patch Code===
+if (strA.charAt(i)==strB.charAt(i)) {
+                    return -1;
+                } else {
+                    i++;
+                }

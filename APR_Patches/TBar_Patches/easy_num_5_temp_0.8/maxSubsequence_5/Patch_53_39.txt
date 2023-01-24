@@ -1,0 +1,20 @@
+//**********************************************************
+//com/codex/Solution.java ------ 22
+//**********************************************************
+===Buggy Code===
+if (nums[i] > dp[k - 1]) {
+                dp[0] = dp[1];
+                for (int j = 1; j < k - 1; j++) {
+                    dp[j] = Math.max(dp[j], dp[j + 1]);
+                }
+                dp[k - 1] = nums[i];
+            }
+
+===Patch Code===
+if (nums[i]>=dp[k - 1]) {
+                dp[0] = dp[1];
+                for (int j = 1; j < k - 1; j++) {
+                    dp[j] = Math.max(dp[j], dp[j + 1]);
+                }
+                dp[k - 1] = nums[i];
+            }

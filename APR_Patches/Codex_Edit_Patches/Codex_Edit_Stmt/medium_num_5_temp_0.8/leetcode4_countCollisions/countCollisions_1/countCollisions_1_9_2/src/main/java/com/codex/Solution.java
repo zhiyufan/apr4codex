@@ -1,0 +1,32 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+public static int countCollisions(String directions) {
+    
+    char[] chars = directions.toCharArray();
+    int result = 0;
+    for (int i = 0; i < chars.length; i++) {
+        for (int j = 0; j < chars.length; j++) {
+            // "i" equals "j".
+            if (i == j) {
+                continue;
+            }
+            // "S" and "S"
+            if (chars[i] == 'S' && chars[j] == 'S') {
+                result++;
+            // "R" and "L"
+            } else if (chars[i] == 'L' && chars[j] == 'R') {
+                result++;
+            // "L" and "R"
+            } else if (chars[i] == 'R' && chars[j] == 'L') {
+                result += 2;
+            }
+        }   
+    }
+    return result;
+}
+
+    
+}

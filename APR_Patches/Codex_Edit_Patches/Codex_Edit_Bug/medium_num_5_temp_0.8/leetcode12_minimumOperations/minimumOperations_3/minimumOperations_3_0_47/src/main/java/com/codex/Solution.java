@@ -1,0 +1,26 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static int minimumOperations(int[] nums) {
+        
+        int len = nums.length;
+        int[][] dp = new int[len][2];
+        dp[0][0] = 0;
+        dp[0][1] = nums[0] == 1 ? 1 : 0;
+        for (int i = 1; i < len; i++) {
+            dp[i][0] = dp[i-1][0];
+            if (nums[i] != nums[i-1]) {
+                dp[i][0] += 1;
+            }
+            dp[i][1] = dp[i-1][0];
+            if (nums[i] != nums[i-1]) {
+                dp[i][1] += 1;
+            }
+        }
+        return dp[len-1][1];
+    }
+
+    
+}

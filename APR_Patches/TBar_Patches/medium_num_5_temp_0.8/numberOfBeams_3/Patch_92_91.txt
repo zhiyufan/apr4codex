@@ -1,0 +1,14 @@
+//**********************************************************
+//com/codex/Solution.java ------ 25
+//**********************************************************
+===Buggy Code===
+if (bank[m].charAt(l) == '1') {
+                                        noDevices = false;
+                                        break;
+                                    }
+
+===Patch Code===
+if (l > k || (bank[m].charAt(l) == '1')) {
+                                        noDevices = false;
+                                        break;
+                                    }

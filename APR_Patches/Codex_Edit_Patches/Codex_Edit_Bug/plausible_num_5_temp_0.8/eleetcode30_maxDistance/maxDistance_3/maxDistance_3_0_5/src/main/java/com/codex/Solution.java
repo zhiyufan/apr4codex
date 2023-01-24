@@ -1,0 +1,24 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    //max distance between two different colored balls
+    public static int maxDistance(int[] colors) {
+        
+        int[] right = new int[colors.length];
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < colors.length; i++) {
+            right[i] = map.containsKey(colors[i]) ? map.get(colors[i]) : -1;
+            map.put(colors[i], i);
+        }
+
+        int max = 0;
+        for (int i = 0; i < colors.length; i++) {
+            int distance = right[i] - i;
+            max = Math.max(max, distance);
+        }
+    }    
+        return max;
+    }
+}

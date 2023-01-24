@@ -1,0 +1,68 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static long gridGame(int[][] grid) {
+        
+        int m = grid[0].length;
+        int[] grid1 = new int[m];
+        int[] grid2 = new int[m];
+        for (int i = 0; i < m; i++) {
+            grid1[i] = grid[0][i];
+            grid2[i] = grid[1][i];
+        }
+        Arrays.sort(grid1);
+        Arrays.sort(grid2);
+        int sum = 0;
+        for (int i = 0; i < m; i++) {
+             if (grid1[i] == 2 && grid2[i] == 2) {
+                sum += 2;
+            }
+            if (grid1[i] == 2 && grid2[i] == 1) {
+                sum += 1;
+            }
+            if (grid1[i] == 2 && grid2[i] == 0) {
+                sum += 0;
+            }
+            
+             if (grid1[i] == 1 && grid2[i] == 2) {
+                sum += 1;
+            }
+             if (grid1[i] == 1 && grid2[i] == 1) {
+                sum += 1;
+            }
+             if (grid1[i] == 1 && grid2[i] == 0) {
+                sum += 0;
+            }
+            
+             if (grid1[i] == 0 && grid2[i] == 2) {
+                sum += 0;
+            }
+             if (grid1[i] == 0 && grid2[i] == 1) {
+                sum += 0;
+            }
+            if (grid1[i] == 0 && grid2[i] == 0) {
+                sum += 0;
+            }
+        }
+        
+        
+        return sum;
+    }
+    
+    /*
+    int sum = 0;
+        for (int i = 0; i < m; i++) {
+            if (grid1[i] > grid2[i]) {
+                sum += grid2[i];
+            } else {
+                sum += grid1[i];
+            }
+        }
+        return sum;
+    }
+    */
+
+    
+}

@@ -1,0 +1,38 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static int wateringPlants(int[] plants, int capacity) {
+        
+
+        int steps = 0;
+        int startPos = 0;
+        int currPos = 0;
+        /*
+         * Find the smallest plant among all the plants
+         */
+        int currCapacity = capacity;
+        int smallestPlant = 0;
+        for (int i = 0; i < plants.length; i++) {
+            if (plants[i] < plants[smallestPlant]) {
+                smallestPlant = i;
+        
+            }
+        }
+        while (currPos < plants.length) {
+            if (currPos == smallestPlant) {
+                currPos = startPos;
+                currCapacity = capacity;
+                steps++;
+            }
+            currCapacity -= plants[currPos];
+            currPos++;
+            steps++;
+        }
+        
+        return steps;
+    }
+
+    
+}

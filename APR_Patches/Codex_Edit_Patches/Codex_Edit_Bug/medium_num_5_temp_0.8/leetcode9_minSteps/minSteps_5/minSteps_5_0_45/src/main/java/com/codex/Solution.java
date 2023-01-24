@@ -1,0 +1,25 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    /* Calculate the number of steps required to convert the source string to target string */
+    public static int minSteps(String s, String t) {
+        
+        int[] hash = new int[26];
+        for (int i = 0; i < s.length(); i++) {
+            hash[s.charAt(i) - 'a']++;
+        }
+        int step = 0;
+        for (int i = 0; i < t.length(); i++) {
+            if (hash[t.charAt(i) - 'a'] == 0) {
+                step++;
+            } else {
+                hash[t.charAt(i) - 'a']--;
+            }
+        }
+        return step;
+    }
+
+    
+}

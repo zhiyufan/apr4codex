@@ -1,0 +1,8 @@
+//**********************************************************
+//com/codex/Solution.java ------ 13
+//**********************************************************
+===Buggy Code===
+if (Integer.valueOf(nums[j] + nums[i]) == Integer.valueOf(target)) ans++;
+
+===Patch Code===
+if (Integer.valueOf(nums[j] + nums[i])<=Integer.valueOf(target)) ans++;

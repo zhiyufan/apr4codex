@@ -1,0 +1,236 @@
+Problem ID,Problem Name,Problem,Completion ID,Bug ID
+leetcode/1,findWinner,failed: Execution Failure,1,M-U-20
+leetcode/1,findWinner,failed: Compile Failure,2,Incomplete Code
+leetcode/1,findWinner,failed: Execution Failure,3,S-O-8
+leetcode/1,findWinner,failed: Execution Failure,4,S-AS-9
+leetcode/1,findWinner,failed: Execution Failure,5,S-F-3
+leetcode/3,minDeletion,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/3,minDeletion,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/3,minDeletion,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/3,minDeletion,failed: Execution Failure,4,M-L-6
+leetcode/3,minDeletion,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/4,countCollisions,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/4,countCollisions,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/4,countCollisions,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/4,countCollisions,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/4,countCollisions,failed: Compile Failure,2,Incomplete Code
+leetcode/5,maximumSubsequenceCount,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/5,maximumSubsequenceCount,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/5,maximumSubsequenceCount,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/5,maximumSubsequenceCount,failed: Execution Failure,4,M-U-21
+leetcode/5,maximumSubsequenceCount,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/6,digArtifacts,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/6,digArtifacts,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/6,digArtifacts,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/6,digArtifacts,failed: Compile Failure,2,Incomplete Code
+leetcode/6,digArtifacts,failed: Compile Failure,5,Incomplete Code
+leetcode/7,minimalKSum,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/7,minimalKSum,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/7,minimalKSum,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/7,minimalKSum,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/7,minimalKSum,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/9,minSteps,failed: Execution Failure,1,M-U-22
+leetcode/9,minSteps,failed: Execution Failure,2,M-U-23
+leetcode/9,minSteps,failed: Execution Failure,3,S-O-9
+leetcode/9,minSteps,failed: Execution Failure,4,M-U-24
+leetcode/9,minSteps,failed: Execution Failure,5,M-U-25
+leetcode/12,minimumOperations,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/12,minimumOperations,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/12,minimumOperations,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/12,minimumOperations,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/12,minimumOperations,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/13,smallestNumber,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/13,smallestNumber,failed: Execution Failure,2,M-U-26
+leetcode/13,smallestNumber,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/13,smallestNumber,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/13,smallestNumber,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/14,pivotArray,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/14,pivotArray,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/14,pivotArray,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/14,pivotArray,failed: Execution Failure,4,M-U-27
+leetcode/14,pivotArray,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/15,maxScoreIndices,failed: Execution Failure,1,M-L-7
+leetcode/15,maxScoreIndices,failed: Execution Failure,2,M-U-28
+leetcode/15,maxScoreIndices,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/15,maxScoreIndices,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/15,maxScoreIndices,failed: Compile Failure,3,Incomplete Code
+leetcode/17,numberOfArrays,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/17,numberOfArrays,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/17,numberOfArrays,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/17,numberOfArrays,failed: Compile Failure,2,Incomplete Code
+leetcode/17,numberOfArrays,failed: Compile Failure,4,Invoke Undefined Program Elements
+leetcode/21,numberOfBeams,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/21,numberOfBeams,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/21,numberOfBeams,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/21,numberOfBeams,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/21,numberOfBeams,failed: Compile Failure,2,Incomplete Code
+leetcode/22,executeInstructions,failed: Execution Failure,2,M-U-29
+leetcode/22,executeInstructions,failed: Execution Failure,3,M-L-8
+leetcode/22,executeInstructions,failed: Execution Failure,4,M-L-9
+leetcode/22,executeInstructions,failed: Compile Failure,1,Invoke Undefined Program Elements
+leetcode/22,executeInstructions,failed: Compile Failure,5,Incomplete Code
+leetcode/23,findAllRecipes,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/23,findAllRecipes,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/23,findAllRecipes,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/23,findAllRecipes,failed: Compile Failure,1,Incomplete Code
+leetcode/23,findAllRecipes,failed: Compile Failure,4,Invoke Undefined Program Elements
+leetcode/26,goodDaysToRobBank,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/26,goodDaysToRobBank,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/26,goodDaysToRobBank,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/26,goodDaysToRobBank,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/26,goodDaysToRobBank,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/29,minimumBuckets,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/29,minimumBuckets,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/29,minimumBuckets,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/29,minimumBuckets,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/29,minimumBuckets,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/30,wateringPlants,failed: Execution Failure,1,M-L-10
+leetcode/30,wateringPlants,failed: Execution Failure,2,M-U-30
+leetcode/30,wateringPlants,failed: Execution Failure,3,S-O-10
+leetcode/30,wateringPlants,failed: Execution Failure,4,M-S-8
+leetcode/30,wateringPlants,failed: Execution Failure,5,M-U-31
+leetcode/35,maxTwoEvents,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/35,maxTwoEvents,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/35,maxTwoEvents,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/35,maxTwoEvents,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/35,maxTwoEvents,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/38,winnerOfGame,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/38,winnerOfGame,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/38,winnerOfGame,failed: Execution Failure,3,S-DS-3
+leetcode/38,winnerOfGame,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/38,winnerOfGame,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/39,minOperations,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/39,minOperations,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/39,minOperations,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/39,minOperations,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/39,minOperations,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/40,missingRolls,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/40,missingRolls,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/40,missingRolls,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/40,missingRolls,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/40,missingRolls,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/41,numOfPairs,failed: Execution Failure,1,S-HO-6
+leetcode/41,numOfPairs,failed: Execution Failure,2,S-O-11
+leetcode/41,numOfPairs,failed: Execution Failure,3,S-HO-7
+leetcode/41,numOfPairs,failed: Execution Failure,4,S-HO-8
+leetcode/41,numOfPairs,failed: Execution Failure,5,S-HO-9
+leetcode/42,gridGame,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/42,gridGame,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/42,gridGame,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/42,gridGame,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/42,gridGame,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/44,findOriginalArray,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/44,findOriginalArray,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/44,findOriginalArray,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/44,findOriginalArray,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/44,findOriginalArray,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/47,findFarmland,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/47,findFarmland,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/47,findFarmland,failed: Compile Failure,1,Invoke Undefined Program Elements
+leetcode/47,findFarmland,failed: Compile Failure,3,Incomplete Code
+leetcode/47,findFarmland,failed: Compile Failure,4,Invoke Undefined Program Elements
+leetcode/48,kthLargestNumber,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/48,kthLargestNumber,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/48,kthLargestNumber,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/48,kthLargestNumber,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/48,kthLargestNumber,failed: Compile Failure,3,Incomplete Code
+leetcode/49,findDifferentBinaryString,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/49,findDifferentBinaryString,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/49,findDifferentBinaryString,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/49,findDifferentBinaryString,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/49,findDifferentBinaryString,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/50,maxMatrixSum,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/50,maxMatrixSum,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/50,maxMatrixSum,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/50,maxMatrixSum,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/50,maxMatrixSum,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/51,rearrangeArray2,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/51,rearrangeArray2,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/51,rearrangeArray2,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/51,rearrangeArray2,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/51,rearrangeArray2,failed: Compile Failure,2,Incomplete Code
+leetcode/52,minStoneSum,failed: Compile Failure,1,Invoke Undefined Program Elements
+leetcode/52,minStoneSum,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/52,minStoneSum,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/52,minStoneSum,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/52,minStoneSum,failed: Compile Failure,5,Incomplete Code
+leetcode/53,checkMove,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/53,checkMove,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/53,checkMove,failed: Compile Failure,3,Invoke Undefined Program Elements
+leetcode/53,checkMove,failed: Compile Failure,4,Incomplete Code
+leetcode/53,checkMove,failed: Compile Failure,5,Incomplete Code
+leetcode/54,numberOfWeeks,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/54,numberOfWeeks,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/54,numberOfWeeks,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/54,numberOfWeeks,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/54,numberOfWeeks,failed: Compile Failure,2,Invoke Undefined Program Elements
+leetcode/55,maximumNumber,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/55,maximumNumber,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/55,maximumNumber,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/55,maximumNumber,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/55,maximumNumber,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/57,addRungs,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/57,addRungs,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/57,addRungs,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/57,addRungs,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/57,addRungs,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/58,countPalindromicSubsequence,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/58,countPalindromicSubsequence,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/58,countPalindromicSubsequence,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/58,countPalindromicSubsequence,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/58,countPalindromicSubsequence,failed: Compile Failure,3,Invoke Undefined Program Elements
+leetcode/59,nearestExit,failed: Execution Failure,1,M-L-11
+leetcode/59,nearestExit,failed: Execution Failure,2,M-L-12
+leetcode/59,nearestExit,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/59,nearestExit,failed: Execution Failure,4,M-L-13
+leetcode/59,nearestExit,failed: Compile Failure,5,Incomplete Code
+leetcode/60,eliminateMaximum,failed: Execution Failure,1,M-L-14
+leetcode/60,eliminateMaximum,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/60,eliminateMaximum,failed: Execution Failure,4,M-U-32
+leetcode/60,eliminateMaximum,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/60,eliminateMaximum,failed: Compile Failure,3,Incomplete Code
+mleetcode/8,sortJumbled,failed: Execution Failure,1,Misaligned Algorithm
+mleetcode/8,sortJumbled,Plausible,2,Misaligned Algorithm
+mleetcode/8,sortJumbled,Plausible,3,Misaligned Algorithm
+mleetcode/8,sortJumbled,failed: Compile Failure,4,
+mleetcode/8,sortJumbled,failed: Compile Failure,5,
+mleetcode/11,sumOfThree,failed: Execution Failure,1,M-U-33
+mleetcode/11,sumOfThree,failed: Execution Failure,2,M-U-34
+mleetcode/11,sumOfThree,failed: Execution Failure,3,M-U-35
+mleetcode/11,sumOfThree,failed: Execution Failure,4,S-O-12
+mleetcode/11,sumOfThree,Plausible,5,M-U-36
+mleetcode/18,minMoves,failed: Execution Failure,1,M-U-37
+mleetcode/18,minMoves,failed: Execution Failure,2,M-U-38
+mleetcode/18,minMoves,Plausible,3,S-HO-10
+mleetcode/18,minMoves,failed: Execution Failure,4,Misaligned Algorithm
+mleetcode/18,minMoves,failed: Execution Failure,5,Misaligned Algorithm
+mleetcode/28,getAverages,failed: Execution Failure,1,Misaligned Algorithm
+mleetcode/28,getAverages,failed: Execution Failure,2,Misaligned Algorithm
+mleetcode/28,getAverages,failed: Execution Failure,3,Misaligned Algorithm
+mleetcode/28,getAverages,failed: Execution Failure,4,Misaligned Algorithm
+mleetcode/28,getAverages,Plausible,5,Misaligned Algorithm
+mleetcode/33,countVowels,Plausible,1,Misaligned Algorithm
+mleetcode/33,countVowels,Plausible,2,Misaligned Algorithm
+mleetcode/33,countVowels,Plausible,3,Misaligned Algorithm
+mleetcode/33,countVowels,failed: Execution Failure,4,Misaligned Algorithm
+mleetcode/33,countVowels,Plausible,5,Misaligned Algorithm
+mleetcode/43,sumOfBeauties,Plausible,1,Misaligned Algorithm
+mleetcode/43,sumOfBeauties,failed: Execution Failure,2,M-U-39
+mleetcode/43,sumOfBeauties,failed: Execution Failure,3,Misaligned Algorithm
+mleetcode/43,sumOfBeauties,failed: Execution Failure,4,Misaligned Algorithm
+mleetcode/43,sumOfBeauties,failed: Execution Failure,5,Misaligned Algorithm
+mleetcode/45,interchangeableRectangles,Plausible,1,Misaligned Algorithm
+mleetcode/45,interchangeableRectangles,Plausible,2,Misaligned Algorithm
+mleetcode/45,interchangeableRectangles,Plausible,3,S-DS-4
+mleetcode/45,interchangeableRectangles,Plausible,4,M-S-9
+mleetcode/45,interchangeableRectangles,failed: Execution Failure,5,S-DS-5
+mleetcode/46,numberOfWeakCharacters,Plausible,1,Misaligned Algorithm
+mleetcode/46,numberOfWeakCharacters,Plausible,2,Misaligned Algorithm
+mleetcode/46,numberOfWeakCharacters,Plausible,3,Misaligned Algorithm
+mleetcode/46,numberOfWeakCharacters,Plausible,4,Misaligned Algorithm
+mleetcode/46,numberOfWeakCharacters,Plausible,5,Misaligned Algorithm
+mleetcode/56,smallestChair,failed: Execution Failure,1,Misaligned Algorithm
+mleetcode/56,smallestChair,failed: Execution Failure,2,Misaligned Algorithm
+mleetcode/56,smallestChair,Plausible,3,Misaligned Algorithm
+mleetcode/56,smallestChair,failed: Execution Failure,4,Misaligned Algorithm
+mleetcode/56,smallestChair,failed: Execution Failure,5,Misaligned Algorithm

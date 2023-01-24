@@ -1,0 +1,30 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    /**
+     *
+     * @param nums
+     * @return
+     *
+     * dp[i] = min{dp[i - 1] + |A[i] - A[i - 1]|, dp[i - 2] + |A[i] - A[i - 2]|}
+     *
+     * Time: O(N)
+     * Space: O(N)
+     */
+    public static int minimumOperations(int[] nums) {
+        
+        int[] dp = new int[nums.length];
+        dp[0] = 0;
+        dp[1] = Math.max(nums[0], nums[1]);
+        for (int i = 2; i < nums.length; i++) {
+            int a = dp[i - 2] + Math.abs(nums[i] - nums[i - 2]);
+            int b = dp[i - 1] + Math.abs(nums[i] - nums[i - 1]);
+            dp[i] = Math.min(a, b);
+        }
+        return dp[nums.length - 1];
+    }
+
+    
+}

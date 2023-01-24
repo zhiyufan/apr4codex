@@ -1,0 +1,35 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static int wateringPlants(int[] plants, int capacity) {
+        
+
+        int steps = 0;
+        int curCap = capacity;
+
+        for (int i = 0; i < plants.length; i++) {
+            if (curCap < plants[i]) {
+                curCap = capacity;
+                steps++;
+            }
+
+            curCap -= plants[i];
+            steps++;
+
+            if (i + 1 < plants.length) {
+// Check if there is any following plants
+                if (curCap < plants[i + 1]) {
+                    curCap = capacity;
+// plant has no water, refill it
+                    steps++;
+                }
+            }
+        }
+
+        return steps;
+    }
+
+    
+}

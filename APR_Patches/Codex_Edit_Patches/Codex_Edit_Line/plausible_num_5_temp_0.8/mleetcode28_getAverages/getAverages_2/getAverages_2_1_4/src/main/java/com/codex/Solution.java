@@ -1,0 +1,27 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+public static int[] getAverages(int[] nums, int k) {
+        
+        int[] averages = new int[nums.length];
+        if (nums.length == 0 || k == 0) {
+            return averages;
+        }
+        for (int i = 0; i < nums.length; i++) {
+            int low = i - k;
+            int high = i + k - 1;
+            int sum = 0;
+            int count = 0;
+            for (int j = low; j <= high; j++) {
+                if (j >= 0 && j < nums.length) {
+                    sum += nums[j];
+                    count++;
+                }
+            }
+            averages[i] = count == 0 ? -1 : sum / count;
+        }
+        return averages;
+    }
+}

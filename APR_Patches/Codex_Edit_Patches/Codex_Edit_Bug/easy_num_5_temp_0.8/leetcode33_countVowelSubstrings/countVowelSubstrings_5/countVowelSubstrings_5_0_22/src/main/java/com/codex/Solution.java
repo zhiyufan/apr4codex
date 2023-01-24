@@ -1,0 +1,31 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static int countVowelSubstrings(String word) {
+        
+        if (word == null) {
+            throw new IllegalArgumentException();
+        }
+        
+        List<Character> vowels = new ArrayList<>();
+        vowels.add('a');
+        vowels.add('e');
+        vowels.add('i');
+        vowels.add('o');
+        vowels.add('u');
+
+        int count = 0;
+
+        for (int i = 0; i < word.length(); i++) {
+            if (vowels.contains(Character.toLowerCase(word.charAt(i)))) {
+                count += word.length() - i;
+            }
+        }
+
+        return count;
+    }
+
+    
+}

@@ -1,0 +1,42 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+import java.io.*;
+import java.util.*;
+
+class Solution {
+  public static int timeRequiredToBuy(int[] tickets, int k) {
+      
+      Queue<Integer> queue = new LinkedList<Integer>();
+      for(int i = 0; i < tickets.length; i++){
+          queue.add(tickets[i]);
+      }
+      int seconds = 0;
+      while(!queue.isEmpty()){
+          int person = queue.remove();
+          if(person == 0) continue;
+          if(k == 0) {
+              seconds += person;
+              queue.add(person);
+              k = queue.size() - 1;
+          }
+          else{
+              queue.add(person - 1);
+              seconds++;
+              k--;
+          }
+      }
+      return seconds;
+  }
+  public static void main(String[] args) {
+    int[] tickets = {5,5,2,3};
+    int k = 3;
+    System.out.println(timeRequiredToBuy(tickets, k));
+  }
+}
+
+
+    
+}

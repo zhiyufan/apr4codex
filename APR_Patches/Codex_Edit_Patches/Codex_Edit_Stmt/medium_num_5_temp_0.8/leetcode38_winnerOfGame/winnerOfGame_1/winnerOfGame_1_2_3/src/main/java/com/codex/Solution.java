@@ -1,0 +1,71 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static boolean winnerOfGame(String colors) {
+        
+        int i = 0;
+        int count = 0;
+        while (i < colors.length() && count % 2 == 0) {
+            char currentColor = colors.charAt(i);
+            if (currentColor == 'A') {
+                if (i == colors.length() - 1) {
+                    if (i == 1) {
+                        if (colors.charAt(i - 1) == currentColor) {
+                            i = 0;
+                            count++;
+                        } else {
+                            i -= 2;
+                        }
+                    } else {
+                        if (colors.charAt(i - 1) == currentColor) {
+                            i--;
+                            count += 2;
+                        }
+                    }
+                } else if (i == 0){
+                    if (i == colors.length() - 2) {
+                        if (colors.charAt(i + 1) == currentColor) {
+                            i += 2;
+                            count += 2;
+                        }
+                    } else {
+                        if (colors.charAt(i + 1) == currentColor) {
+                            i++;
+                            count += 2;
+                        }
+                    }
+                } else {
+                    if (colors.charAt(i - 1) == currentColor || colors.charAt(i + 1) == currentColor) {
+                        if (colors.charAt(i - 1) == currentColor) {
+                            i -= 2;
+                        } else {
+                            i += 2;
+                        }
+                        count += 2;
+                    } else {
+                        if (i + 1 < colors.length()) {
+                            if (colors.charAt(i + 2) == currentColor) {
+                                i = i + 2;
+                            } else {
+                                i++;
+                            }
+                        } else {
+                            if (colors.charAt(i - 2) == currentColor) {
+                                i = i - 2;
+                            } else {
+                                i--;
+                            }
+                        }
+                    }
+                }
+            } else {
+                i++;
+            }
+        }
+        return count % 2 == 0;
+    }
+
+    
+}

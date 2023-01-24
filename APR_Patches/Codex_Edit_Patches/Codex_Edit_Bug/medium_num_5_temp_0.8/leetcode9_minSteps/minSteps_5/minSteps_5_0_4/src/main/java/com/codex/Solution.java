@@ -1,0 +1,32 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        
+        String s = "bab";
+        String t = "aba";
+        System.out.println(minSteps(s, t));
+    }
+
+    public static int minSteps(String s, String t) {
+        
+        int[] hash = new int[26];
+        for (int i = 0; i < s.length(); i++) {
+            hash[s.charAt(i) - 'a'] = hash[s.charAt(i) - 'a'] + 1;
+            hash[t.charAt(i) - 'a'] = hash[t.charAt(i) - 'a'] - 1;
+        }
+        int step = 0;
+        for (int i = 0; i < t.length(); i++) {
+            if (hash[t.charAt(i) - 'a'] == 0) {
+                step++;
+            } else {
+                hash[t.charAt(i) - 'a']--;
+            }
+        }
+        return step;
+    }
+
+    
+}

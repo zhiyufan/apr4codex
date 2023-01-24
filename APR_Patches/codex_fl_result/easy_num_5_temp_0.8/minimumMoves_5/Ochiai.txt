@@ -1,0 +1,9 @@
+com.codex.Solution@20@0.7071067812
+com.codex.Solution@18@0.7071067812
+com.codex.Solution@27@0.5773502692
+com.codex.Solution@22@0.5773502692
+com.codex.Solution@17@0.5773502692
+com.codex.Solution@16@0.5773502692
+com.codex.Solution@15@0.5773502692
+com.codex.Solution@14@0.5773502692
+com.codex.Solution@11@0.5773502692

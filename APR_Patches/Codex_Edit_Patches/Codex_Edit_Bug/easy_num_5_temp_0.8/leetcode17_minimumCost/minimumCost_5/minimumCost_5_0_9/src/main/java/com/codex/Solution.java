@@ -1,0 +1,27 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static int minimumCost(int[] cost) {
+        
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int i : cost) {
+            list.add(i);
+        }
+        Collections.sort(list);
+        int res = 0;
+        for (int i = 0; i < cost.length; i++) {
+            if (i % 3 == 2 && list.get(i + 1) < list.get(i)) {
+                continue;
+            }
+            else if (i % 3 == 2) {
+                i++;
+            }
+            res += list.get(i);
+        }
+        return res;
+    }
+
+    
+}

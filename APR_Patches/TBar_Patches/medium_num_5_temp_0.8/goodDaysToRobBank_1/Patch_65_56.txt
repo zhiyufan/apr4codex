@@ -1,0 +1,14 @@
+//**********************************************************
+//com/codex/Solution.java ------ 19
+//**********************************************************
+===Buggy Code===
+if (security[j] > security[j + 1]) {
+                    good = false;
+                    break;
+                }
+
+===Patch Code===
+if (security[j]<security[j + 1]) {
+                    good = false;
+                    break;
+                }

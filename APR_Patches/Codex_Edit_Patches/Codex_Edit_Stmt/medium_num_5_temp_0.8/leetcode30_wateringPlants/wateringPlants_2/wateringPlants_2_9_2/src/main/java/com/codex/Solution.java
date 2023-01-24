@@ -1,0 +1,30 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static int wateringPlants(int[] plants, int capacity) {
+        if (plants.length == 0) return 0;
+        int steps = 0;
+        int i = 0;
+        int x = -1;
+        int water = capacity;
+        while (i < plants.length) {
+            if (x >= 0) {
+                if (water < plants[i]) {
+                    steps++;
+                    x = -1;
+                } else {
+                    steps++;
+                    water -= plants[i];
+                    i++;
+                    x++;
+                }
+            } else {
+                steps++;
+                x = 0;
+            }
+        }
+        return steps;
+    }
+}

@@ -1,0 +1,12 @@
+//**********************************************************
+//com/codex/Solution.java ------ 63
+//**********************************************************
+===Buggy Code===
+if (nums[i] != result[i]) {
+                count++;
+            }
+
+===Patch Code===
+if ((nums[i] != result[i]) && (i > 0 && evenList[i] == evenList[i - 1])) {
+                count++;
+            }

@@ -1,0 +1,32 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static List<List<Integer>> findDifference(int[] nums1, int[] nums2) {
+        
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int n1 : nums1) {
+            map.put(n1, 1);
+        }
+        for (int n2 : nums2) {
+            if (map.containsKey(n2)) {
+                map.remove(n2);
+            } else {
+                map.put(n2, 1);
+            }
+        }
+        List<List<Integer>> result = new ArrayList<>();
+        result.add(new ArrayList<>());
+        result.add(new ArrayList<>());
+        for (int n : nums2) {
+            if (map.containsKey(n)) {
+                result.get(1).add(n);
+                map.remove(n);
+            }
+        }
+        return result;
+    }
+
+    
+}

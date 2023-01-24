@@ -1,0 +1,39 @@
+minBitFlips419avaj.noituloSxedocmocavajniamcrs4_spilFtiBnimspilFtiBnim_2edocteel8.0_pmet_5_mun_ysaesnoitulos_xedoc..
+-                count++;
++count++;
+
+
+
+
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static int minBitFlips(int start, int goal) {
+        /** A bit flip of a number x is choosing a bit in the binary representation of x and flipping it from either 0 to 1 or 1 to 0.
+         *  For example, for x = 7, the binary representation is 111 and we may choose any bit (including any leading zeros not shown) and flip it. We can flip the first bit from the right to get 110, flip the second bit from the right to get 101, flip the fifth bit from the right (a leading zero) to get 10111, etc.
+         *  Given two integers start and goal, return the minimum number of bit flips to convert start to goal.
+         */
+        int n = start;
+        int m = goal;
+        int ans = 0;
+        int count = 0;
+        while (n > 0 || m > 0) {
+            int b1 = n % 2;
+            int b2 = m % 2;
+            if (b1 != b2) {
+count++;
+                count++;            } else {
+                ans += count / 2;
+                count = 0;
+            }
+            n /= 2;
+            m /= 2;
+        }
+        if (count % 2 != 0)
+            return -1;
+        return ans + count / 2;
+    }
+
+    }

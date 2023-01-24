@@ -1,0 +1,14 @@
+//**********************************************************
+//com/codex/Solution.java ------ 20
+//**********************************************************
+===Buggy Code===
+while (!pq.isEmpty() && pq.peek() - cur <= 1) {
+            count++;
+            pq.poll();
+        }
+
+===Patch Code===
+while (!pq.isEmpty() && pq.peek() - cur<1) {
+            count++;
+            pq.poll();
+        }

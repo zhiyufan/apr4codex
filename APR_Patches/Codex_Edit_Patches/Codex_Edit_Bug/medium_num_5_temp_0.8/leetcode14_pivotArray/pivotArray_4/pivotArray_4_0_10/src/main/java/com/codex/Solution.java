@@ -1,0 +1,24 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static int[] pivotArray(int[] nums, int pivot) {
+        
+        int[] result = new int[nums.length];
+        int less = 0;
+        //index where the pivot and elements greater than the pivot will be inserted
+        int greater = nums.length - 1;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] < pivot) {
+                result[less++] = nums[i];
+            } else {
+                result[greater--] = nums[i];
+            }
+        }
+        while (less <= greater) {
+            result[less++] = pivot;
+        }
+        return result;
+    }
+}

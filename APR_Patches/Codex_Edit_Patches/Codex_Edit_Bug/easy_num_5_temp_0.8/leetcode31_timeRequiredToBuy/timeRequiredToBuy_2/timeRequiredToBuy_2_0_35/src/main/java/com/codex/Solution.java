@@ -1,0 +1,17 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static int timeRequiredToBuy(int[] tickets, int k) {
+        
+        Arrays.sort(tickets);
+        int total = 0;
+        for (int i = 0; i <= k; i++) {
+            total += tickets[i];
+        }
+        return total;
+    }
+
+    
+}

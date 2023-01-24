@@ -1,0 +1,73 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static int minDeletion(int[] nums) {
+        
+
+
+        int count = 0;
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] == nums[i - 1] && i % 2 == 1) {
+                count++;
+            }
+        }
+        int delCount = Math.min(count + 1, nums.length - count);
+
+        int[] oddList = new int[nums.length - delCount];
+        int[] evenList = new int[nums.length - delCount];
+        int oddIndex = 0, evenIndex = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (i % 2 == 0) {
+                evenList[evenIndex++] = nums[i];
+            } else {
+                oddList[oddIndex++] = nums[i];
+            }
+        }
+
+        int oddCount = 0;
+        int evenCount = 0;
+        for (int i = 0; i < oddList.length; i++) {
+            if (i % 2 == 0) {
+                if (i > 0 && evenList[i] == evenList[i - 1]) {
+                    oddCount++;
+                }
+            } else {
+                if (i > 0 && oddList[i] == oddList[i - 1]) {
+                    oddCount++;
+                }
+            } else {
+                if (oddCount > 1) {
+                    oddList[i - 1] = oddList[i];
+                }
+                oddCount = 0;
+                if (i > 0 && oddList[i] == oddList[i - 1]) {
+                    oddCount++;
+                }
+
+            }
+        }
+
+        int[] result = new int[nums.length];
+        int resultIndex = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (i % 2 == 0) {
+                result[resultIndex++] = evenList[i];
+            } else {
+                result[resultIndex++] = oddList[i];
+            }
+        }
+
+        int count = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != result[i]) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+        
+}

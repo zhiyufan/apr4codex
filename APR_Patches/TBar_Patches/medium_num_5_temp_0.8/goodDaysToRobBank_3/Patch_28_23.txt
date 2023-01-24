@@ -1,0 +1,12 @@
+//**********************************************************
+//com/codex/Solution.java ------ 30
+//**********************************************************
+===Buggy Code===
+if (i >= time && i <= security.length - time - 1 && nonInc[i - time] <= security[i] && security[i] <= nonDec[i + time]) {
+                res.add(i);
+            }
+
+===Patch Code===
+if (i >= time && i <= security.length - time - 1 && nonInc[i - time]>=security[i] && security[i] <= nonDec[i + time]) {
+                res.add(i);
+            }

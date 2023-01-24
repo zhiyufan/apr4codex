@@ -1,0 +1,27 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static int minTimeToType(String word) {
+        
+
+        int res = 0;
+        for (int i = 1; i < word.length(); i++) {
+            int a = move(word.charAt(i - 1), word.charAt(i));
+            int b = 26 - a;
+            res += Math.min(a, b);
+        }
+        return res;
+    }
+
+    private static int move(char c1, char c2) {
+        int num1 = c1 - 'a';
+        int num2 = c2 - 'a';
+        return Math.abs(num1 - num2);
+    }
+
+    
+
+    
+}

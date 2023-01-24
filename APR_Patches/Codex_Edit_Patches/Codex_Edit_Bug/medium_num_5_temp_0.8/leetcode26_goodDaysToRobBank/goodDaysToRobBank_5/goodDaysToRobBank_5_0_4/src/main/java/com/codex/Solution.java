@@ -1,0 +1,41 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    //INPUT: {1, 25, 30, 12, 5, 40, 30}, time = 2
+    //OUTPUT: {3}
+    
+    //INPUT: {1, 25, 30, 12, 5, 40, 30}, time = 3
+    //OUTPUT: {3, 4}
+    
+    //INPUT: {1, 25, 30, 12, 5, 40, 30}, time = 4
+    //OUTPUT: {4}
+
+
+
+    public static List<Integer> goodDaysToRobBank(int[] security, int time) {
+        
+        List<Integer> result = new ArrayList<>();
+        if (security == null || security.length == 0 || time <= 0) return result;
+
+        if (time == 1) {
+            for (int i = 1; i < security.length; i++) {
+                if (security[i] >= security[i - 1]) result.add(i);
+            }
+            return result;
+        }
+
+        int end = security.length - time;
+        for (int i = time; i <= end; i++) {
+            int j = 0;
+            for (j = 1; j <= time; j++) {
+                if (!(security[i - j] >= security[i - j + 1] && security[i + j] <= security[i + j - 1])) break;
+            }
+            if (j > time) result.add(i);
+        }
+        return result;
+    }
+
+    
+}

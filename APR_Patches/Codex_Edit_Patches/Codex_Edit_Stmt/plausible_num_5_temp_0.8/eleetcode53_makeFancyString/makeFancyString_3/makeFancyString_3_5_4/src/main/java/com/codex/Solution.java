@@ -1,0 +1,28 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static String makeFancyString(String s) {
+        
+
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < s.length(); i++) {
+            char thisChar = s.charAt(i);
+            if (i == 0) {
+                sb.append(toUpperCase(thisChar));
+            } else {
+                char lastChar = sb.charAt(sb.length() - 1);
+                char lastLastChar = sb.length() >= 2 ? sb.charAt(sb.length() - 2) : ' ';
+                if (lastChar != thisChar && lastLastChar != thisChar) {
+                    sb.append(toUpperCase(thisChar));
+                }
+            }
+        }
+        return sb.toString();
+    }
+
+    private static char toUpperCase(char ch) {
+        return (ch >= 'a' && ch <= 'z') ? (char)(ch - 'a' + 'A') : ch;
+    }
+}

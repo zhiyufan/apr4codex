@@ -1,0 +1,30 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+
+public static long smallestNumber(long num) {
+        if (num == 0) {
+            return 0;
+        }
+
+        List<Integer> list = new ArrayList<>();
+        while (num != 0) {
+            if (num % 10 == 0) {
+                num /= 10;
+                continue;
+            }
+            list.add((int) num % 10);            
+            num /= 10;
+        }
+        list.sort(Integer::compareTo);
+        long answer = 0;
+        for (int i = 0; i < list.size(); i++) {
+            answer += list.get(i) * Math.pow(10, i);
+        }
+        return answer;
+    }
+
+    
+}

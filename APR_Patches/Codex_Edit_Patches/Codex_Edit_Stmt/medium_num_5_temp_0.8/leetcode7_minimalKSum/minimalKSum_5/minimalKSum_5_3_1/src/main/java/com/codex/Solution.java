@@ -1,0 +1,28 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static long minimalKSum(int[] nums, int k) {
+        
+        Arrays.sort(nums);
+        int size = nums.length;
+        long sum = 0;
+        int pos = 0;
+        for (int i = 0; i < size; i++) {
+            pos++;
+            if (nums[i] == pos) {
+            } else if (nums[i] < pos) {
+                continue;
+            } else {
+                sum += pos;
+                k--;
+                i--;
+            }
+        }
+        sum += (pos + k - 1) * k / 2;
+        return sum;
+    }
+
+    
+}

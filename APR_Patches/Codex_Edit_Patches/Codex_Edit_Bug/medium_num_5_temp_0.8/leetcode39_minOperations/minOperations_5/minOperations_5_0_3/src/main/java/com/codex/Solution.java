@@ -1,0 +1,44 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+public static int minOperations(int[][] grid, int x) {
+        
+        boolean flag = false;
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) {
+                if (grid[0][0] != grid[i][j]) {
+                    flag = true;
+                    break;
+                }
+            }
+        }
+        if (!flag) {
+            return 0;
+        }
+        int count = 0;
+        int matrixSize =  grid.length;
+        for (int i = 0; i < matrixSize; i++) {
+            for (int j = 0; j < matrixSize; j++) {
+                if (grid[i][j] > x) {
+                    count += grid[i][j] - x;
+                    grid[i][j] = x;
+                } else if (grid[i][j] < x) {
+                    count += (x - grid[i][j]) / x + ((x - grid[0][0]) % x == 0 ? 0 : 1);
+                    grid[i][j] = x;
+                }
+            }
+        }
+        for (int i = 0; i < matrixSize; i++) {
+            for (int j = 0; j < matrixSize; j++) {
+                if (grid[i][j] != grid[0][0]) {
+                    return -1;
+                }
+            }
+        }
+        return count;
+    }
+
+    
+}

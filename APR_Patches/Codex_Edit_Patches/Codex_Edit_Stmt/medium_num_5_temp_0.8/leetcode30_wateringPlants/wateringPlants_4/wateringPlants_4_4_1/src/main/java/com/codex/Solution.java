@@ -1,0 +1,32 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+   
+
+    public static int wateringPlants(int[] plants, int capacity) {
+        
+
+        int steps = 0;
+        int curCap = 0;
+
+        for (int i = 0; i < plants.length; i++) {
+            curCap += plants[i];
+            if (curCap < capacity) {
+                if (i + 1 < plants.length) {
+                    if (curCap < plants[i + 1]) {
+                        curCap = capacity;
+                        steps++;
+                    }
+                }
+            }
+
+            curCap = 0;
+        }
+
+        return steps;
+    }
+
+    
+}

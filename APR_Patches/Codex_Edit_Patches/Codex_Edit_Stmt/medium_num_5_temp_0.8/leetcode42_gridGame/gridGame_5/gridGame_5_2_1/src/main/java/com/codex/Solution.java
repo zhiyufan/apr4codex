@@ -1,0 +1,26 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static long gridGame(int[][] grid) {
+        
+        int m = grid[0].length;
+        int[] grid1 = grid[0];
+        int[] grid2 = grid[1];
+        
+        Arrays.sort(grid1);
+        Arrays.sort(grid2);
+        int sum = 0;
+        for (int i = 0; i < m; i++) {
+            if (grid1[i] > grid2[i]) {
+                sum += grid2[i];
+            } else {
+                sum += grid1[i];
+            }
+        }
+        return sum;
+    }
+
+    
+}

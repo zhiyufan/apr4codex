@@ -1,0 +1,23 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static String findDifferentBinaryString(String[] nums, int k) {
+        if (nums.length <= 1) return "0";
+        int[] counts = new int[nums[0].length()];
+        for (int i = 0; i < nums.length; i++)
+            for (int j = 0; j < nums[0].length(); j++)
+                if (nums[i].charAt(j) == '1') counts[j]++;
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < counts.length; i++) sb.append(counts[i] * 2 > nums.length ? '0' : '1');
+        return sb.toString();
+    }
+
+    public static void main(String[] args) {
+        String[] test = {"00", "11"};
+        String[] test2 = {"1110", "0001"};
+        System.out.println(findDifferentBinaryString(test, 1));
+        System.out.println(findDifferentBinaryString(test2, 2));
+    }
+}

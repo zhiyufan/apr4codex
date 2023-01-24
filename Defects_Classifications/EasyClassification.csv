@@ -1,0 +1,101 @@
+Problem ID,Problem Name,Problem,Completion ID,Bug ID
+leetcode/2,minBitFlips,failed: Execution Failure,2,S-HO-1
+leetcode/2,minBitFlips,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/2,minBitFlips,failed: Execution Failure,4,S-V-1
+leetcode/2,minBitFlips,failed: Execution Failure,5,S-DS-1
+leetcode/2,minBitFlips,failed: Compile Failure,1,Incomplete Code
+leetcode/3,findDifference,failed: Execution Failure,1,M-S-1
+leetcode/3,findDifference,failed: Execution Failure,2,M-S-2
+leetcode/3,findDifference,failed: Execution Failure,3,M-S-3
+leetcode/3,findDifference,failed: Execution Failure,4,M-S-4
+leetcode/3,findDifference,failed: Execution Failure,5,M-U-1
+leetcode/4,countHillValley,failed: Execution Failure,1,M-U-2
+leetcode/4,countHillValley,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/4,countHillValley,failed: Execution Failure,3,M-U-3
+leetcode/4,countHillValley,failed: Execution Failure,4,M-U-4
+leetcode/4,countHillValley,failed: Execution Failure,5,M-U-5
+leetcode/14,minimumSum,failed: Execution Failure,1,S-F-1
+leetcode/14,minimumSum,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/14,minimumSum,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/14,minimumSum,failed: Compile Failure,2,Incomplete Code
+leetcode/14,minimumSum,failed: Compile Failure,4,Incomplete Code
+leetcode/16,countElements,failed: Execution Failure,1,M-U-6
+leetcode/16,countElements,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/16,countElements,failed: Execution Failure,3,M-U-7
+leetcode/16,countElements,failed: Execution Failure,4,S-HO-2
+leetcode/16,countElements,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/17,minimumCost,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/17,minimumCost,failed: Execution Failure,2,S-A-1
+leetcode/17,minimumCost,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/17,minimumCost,failed: Execution Failure,5,S-F-2
+leetcode/17,minimumCost,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/26,maxSubsequence,failed: Execution Failure,1,Misaligned Algorithm
+leetcode/26,maxSubsequence,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/26,maxSubsequence,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/26,maxSubsequence,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/26,maxSubsequence,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/27,findEvenNumbers,failed: Execution Failure,2,M-L-1
+leetcode/27,findEvenNumbers,failed: Execution Failure,4,S-HO-3
+leetcode/27,findEvenNumbers,failed: Compile Failure,1,Incomplete Code
+leetcode/27,findEvenNumbers,failed: Compile Failure,3,Incomplete Code
+leetcode/27,findEvenNumbers,failed: Compile Failure,5,Incomplete Code
+leetcode/28,targetIndices,failed: Execution Failure,1,S-AS-1
+leetcode/28,targetIndices,failed: Execution Failure,2,S-AS-2
+leetcode/28,targetIndices,failed: Execution Failure,3,S-AS-3
+leetcode/28,targetIndices,failed: Execution Failure,4,S-AS-4
+leetcode/28,targetIndices,failed: Execution Failure,5,S-AS-5
+leetcode/31,timeRequiredToBuy,failed: Execution Failure,1,M-U-8
+leetcode/31,timeRequiredToBuy,failed: Execution Failure,2,Misaligned Algorithm
+leetcode/31,timeRequiredToBuy,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/31,timeRequiredToBuy,failed: Execution Failure,4,M-U-9
+leetcode/31,timeRequiredToBuy,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/33,countVowelSubstrings,failed: Execution Failure,1,S-O-1
+leetcode/33,countVowelSubstrings,failed: Execution Failure,2,S-C-1
+leetcode/33,countVowelSubstrings,failed: Execution Failure,3,S-O-2
+leetcode/33,countVowelSubstrings,failed: Execution Failure,4,S-O-3
+leetcode/33,countVowelSubstrings,failed: Execution Failure,5,Misaligned Algorithm
+leetcode/39,twoOutOfThree,failed: Execution Failure,1,M-S-5
+leetcode/39,twoOutOfThree,failed: Execution Failure,2,M-L-2
+leetcode/39,twoOutOfThree,failed: Execution Failure,3,M-S-6
+leetcode/39,twoOutOfThree,failed: Execution Failure,4,M-S-7
+leetcode/39,twoOutOfThree,failed: Execution Failure,5,M-U-10
+leetcode/40,minimumMoves,failed: Execution Failure,1,S-HO-4
+leetcode/40,minimumMoves,failed: Execution Failure,2,S-HO-5
+leetcode/40,minimumMoves,failed: Execution Failure,4,Misaligned Algorithm
+leetcode/40,minimumMoves,failed: Execution Failure,5,M-L-3
+leetcode/40,minimumMoves,failed: Execution Failure,3,Misaligned Algorithm
+leetcode/41,construct2DArray,failed: Execution Failure,1,S-V-2
+leetcode/41,construct2DArray,failed: Execution Failure,2,S-AS-6
+leetcode/41,construct2DArray,failed: Execution Failure,3,S-O-4
+leetcode/41,construct2DArray,failed: Execution Failure,4,S-AS-7
+leetcode/41,construct2DArray,failed: Execution Failure,5,S-AS-8
+leetcode/50,minTimeToType,failed: Execution Failure,2,S-C-2
+leetcode/50,minTimeToType,failed: Execution Failure,3,M-U-11
+leetcode/50,minTimeToType,failed: Execution Failure,5,M-U-12
+leetcode/50,minTimeToType,failed: Execution Failure,1,S-O-5
+leetcode/50,minTimeToType,failed: Execution Failure,4,M-U-13
+leetcode/55,getLucky,failed: Execution Failure,1,M-U-14
+leetcode/55,getLucky,failed: Execution Failure,2,M-U-15
+leetcode/55,getLucky,failed: Compile Failure,3,Incomplete Code
+leetcode/55,getLucky,failed: Execution Failure,4,M-U-16
+leetcode/55,getLucky,failed: Execution Failure,5,Misaligned Algorithm
+eleetcode/8,mostFrequent,failed: Execution Failure,1,M-U-17
+eleetcode/8,mostFrequent,Plausible,2,M-U-18
+eleetcode/8,mostFrequent,failed: Execution Failure,3,Misaligned Algorithm
+eleetcode/8,mostFrequent,failed: Execution Failure,4,S-O-6
+eleetcode/8,mostFrequent,Plausible,5,M-U-19
+eleetcode/30,maxDistance,failed: Execution Failure,1,M-L-4
+eleetcode/30,maxDistance,failed: Execution Failure,2,Misaligned Algorithm
+eleetcode/30,maxDistance,Plausible,3,Misaligned Algorithm
+eleetcode/30,maxDistance,failed: Execution Failure,4,Misaligned Algorithm
+eleetcode/30,maxDistance,failed: Execution Failure,5,Misaligned Algorithm
+eleetcode/36,countValidWords,failed: Compile Failure,1,Invoke Undefined Program Elements
+eleetcode/36,countValidWords,failed: Execution Failure,2,M-L-5
+eleetcode/36,countValidWords,Plausible,3,Misaligned Algorithm
+eleetcode/36,countValidWords,failed: Compile Failure,4,Invoke Undefined Program Elements
+eleetcode/36,countValidWords,failed: Execution Failure,5,Misaligned Algorithm
+eleetcode/53,makeFancyString,failed: Execution Failure,1,S-C-3
+eleetcode/53,makeFancyString,failed: Execution Failure,2,S-DS-2
+eleetcode/53,makeFancyString,Plausible,3,Misaligned Algorithm
+eleetcode/53,makeFancyString,failed: Execution Failure,4,S-O-7
+eleetcode/53,makeFancyString,failed: Execution Failure,5,Misaligned Algorithm

@@ -1,0 +1,19 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static int minDeletion(int[] nums) {
+        
+        int length = nums.length;
+        int count = 1;
+        for (int i = 0; i < length - 1; i++) {
+            if (nums[i] == nums[i + 1]) {return count;}
+            else {count++;}
+        }
+        return count;
+    }
+
+    
+    
+}

@@ -1,0 +1,25 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+public static long countVowels(String word) {
+
+
+        long count = 0;
+        int cnt, len = word.length();
+        char c;
+        for (int i = 0; i < len; i++) {
+            c = word.charAt(i);
+            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+                cnt = 1;
+                while (i < len && c == word.charAt(i)) {
+                    cnt++;
+                count += cnt;
+                    i++;
+                }
+            }
+        }
+        return count;
+    }
+}

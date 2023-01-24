@@ -1,0 +1,26 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static long numberOfWeeks(int[] milestones) {
+        
+        int result = 0;
+        int[] dp = new int[10000];
+        for (int i = 0; i < dp.length; i++) {
+            dp[i] = Integer.MAX_VALUE;
+        }
+        dp[0] = 0;
+        for (int i = 1; i < milestones.length; i++) {
+            for (int j = 0; j < milestones[i] - 1; j++) {
+                if (dp[j] != Integer.MAX_VALUE) {
+                    dp[milestones[i] - 1] = Math.min(dp[j] + 1, dp[milestones[i] - 1]);
+                }
+            }
+            result = Math.max(result, dp[milestones[i] - 1]);
+        }
+        return result;
+    }
+
+    
+}

@@ -1,0 +1,26 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static int wateringPlants(int[] plants, int capacity) {
+        
+        int steps = 0;
+        int currWater = capacity;
+        for (int i = 0; i < plants.length; i++) {
+            if (plants[i] > currWater) {
+                steps += 2 * (i - 1);
+                steps++;
+                currWater = capacity;
+                i--;
+            } else {
+                steps++;
+                currWater -= plants[i];
+            }
+        }
+        return steps;
+    }
+
+
+    
+}

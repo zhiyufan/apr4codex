@@ -1,0 +1,66 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static long maxMatrixSum(int[][] matrix) {
+        
+        long sum = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                sum += matrix[i][j];
+            }
+        }
+
+        List<List<Integer>> rowsToSwap = new ArrayList<>();
+        List<List<Integer>> colsToSwap = new ArrayList<>();
+        for (int i = 0; i < matrix.length; i++) {
+            List<Integer> row = new ArrayList<>();
+            List<Integer> col = new ArrayList<>();
+            for (int j = 0; j < matrix.length; j++) {
+                if (matrix[i][j] == -1) {
+                    row.add(j);
+                }
+                if (matrix[j][i] == -1) {
+                    col.add(j);
+                }
+            }
+            rowsToSwap.add(row);
+            colsToSwap.add(col);
+        }
+
+        for (int i = 0; i < rowsToSwap.size(); i++) {
+            if (rowsToSwap.get(i).size() % 2 != 0) {
+                rowsToSwap.get(i).add(0);
+            }
+            if (colsToSwap.get(i).size() % 2 != 0) {
+                colsToSwap.get(i).add(0);
+            }
+        }
+
+        List<Integer> allColsToSwap = new ArrayList<>();
+        for (int i = 0; i < colsToSwap.size(); i++) {
+            if (colsToSwap.get(i).size() > 0) {
+                allColsToSwap.addAll(colsToSwap.get(i));
+            }
+        }
+
+        List<Integer> rowsToSwap = new ArrayList<>();
+        for (int i = 0; i < rowsForSwap.size(); i++) {
+            if (rowsForSwap.get(i).size() > 0) {
+                rowsToSwap.addAll(rowsForSwap.get(i));
+            }
+        }
+
+        for (int rowToSwap : rowsToSwap) {
+            sum += -2 * matrix[rowToSwap][0];
+        }
+        for (int colToSwap : colsToSwap) {
+            sum += -2 * matrix[0][colToSwap];
+        }
+
+        return sum;
+    }
+
+    
+}

@@ -1,0 +1,12 @@
+//**********************************************************
+//com/codex/Solution.java ------ 11
+//**********************************************************
+===Buggy Code===
+if (original.length < m * n) {
+            return new int[0][0];
+        }
+
+===Patch Code===
+if (original.length!=m * n) {
+            return new int[0][0];
+        }

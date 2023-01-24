@@ -1,0 +1,37 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static int minimumMoves(String s) {
+        
+        int move = 0;
+        while(s.length() > 1){
+            if(s.charAt(0) == 'X' && s.charAt(1) == 'X' && s.charAt(2) == 'X'){
+                s = s.replaceFirst("XXX", "OOO");
+                move++;
+            }else if(s.charAt(0) == 'X' && s.charAt(1) == 'X' && s.charAt(2) == 'O'){
+                s = s.replaceFirst("XXO", "XOO");
+                move++;
+            }else if(s.charAt(0) == 'X' && s.charAt(1) == 'O' && s.charAt(2) == 'X'){
+                s = s.replaceFirst("XOX", "XOO");
+                move++;
+            }else if(s.charAt(0) == 'X' && s.charAt(1) == 'O' && s.charAt(2) == 'O'){
+                s = s.replaceFirst("XO", "OO");
+                move++;
+            }else if(s.charAt(0) == 'O' && s.charAt(1) == 'X' && s.charAt(2) == 'X'){
+                s = s.replaceFirst("OXX", "OXX");
+                move++;
+            }else if(s.charAt(0) == 'O' && s.charAt(1) == 'X' && s.charAt(2) == 'O'){
+                s = s.replaceFirst("OXO", "OXO");
+                move++;
+            }else if(s.charAt(0) == 'O' && s.charAt(1) == 'O' && s.charAt(2) == 'X'){
+                s = s.replaceFirst("OOX", "OOX");
+                move++;
+            }else{
+                s = s.substring(1);
+            }
+        }
+        return move;
+    }
+}

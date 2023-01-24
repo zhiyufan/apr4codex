@@ -1,0 +1,28 @@
+package com.codex;
+
+import java.util.*;
+
+public class Solution {
+    public static long smallestNumber(long num) {
+        
+        List<Integer> list = new ArrayList<>();
+        while (num != 0) {
+            list.add((int) num % 10);
+            num /= 10;
+        }
+        list.sort(Integer::compareTo);
+        long answer = 0;
+        for (int i = 0; i < list.size(); i++) {
+            answer += list.get(i) * Math.pow(10, i);
+        }
+        return answer;
+    }
+
+    /*
+    * For the input 2344, it doesn't work.
+    * It will return 2234
+    * The answer should be 2243
+    * */
+    
+    
+}
