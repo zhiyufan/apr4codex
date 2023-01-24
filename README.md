@@ -1,6 +1,8 @@
+# Automated Repair of Programs from Large Language Models
+
 # Introduction
 
-This repository contains the data used by the paper "Automated Repair of Code from Language Models".
+This repository contains the data used by the paper "[Automated Repair of Programs from Large Language Models](https://arxiv.org/pdf/2205.10583.pdf)" published in ICSE 2023.
 The repisotory is split into multiple main folders with explanations given below:
 * APR_Patches
 * Defects_Classifications
@@ -36,3 +38,10 @@ whether the solution is plausible and the type of fix needed.
 │   └── Codex_Generated_Solutions_Ground_Truth // All constructed ground truth
 └── README.md
 ```
+
+## Contributors:
+### Authors
+Zhiyu Fan, Xiang Gao, Martin Mirchev, Abhik Roychoudhury, Shin Hwei Tan
+
+### Principal Investigator
+Abhik Roychoudhury
